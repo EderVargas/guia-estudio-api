@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: guia-estudio-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: DB_NAME
+        value: guia-estudio
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_ALGORITHM
+        value: HS256
+      - key: JWT_EXPIRE_MINUTES
+        value: 1440
+      - key: REGISTER_SECRET_KEY
+        sync: false
+      - key: FRONTEND_ORIGIN
+        value: https://edervargas.github.io
+      - key: DEBUG
+        value: "false"
