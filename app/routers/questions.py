@@ -5,7 +5,7 @@ from app.security import get_current_user
 router = APIRouter(prefix="/questions", tags=["questions"])
 
 VALID_SUBJECTS = {
-    "matematicas", "lenguajes", "conocimientoMedio", "formacionCivicaEtica",
+    "matematicas", "lenguajes","lenguajes3erTrimestre", "conocimientoMedio", "formacionCivicaEtica",
     "ingles", "inglesExamen", "inglesExamen2doTrimestre", "lenguajes2doTrimestre",
     "matematicas2doTrimestre", "conocimientoMedio3erTrimestre",
     "formacionCivicaEtica2doTrimestre", "formacionCivicaEtica3erTrimestre",
