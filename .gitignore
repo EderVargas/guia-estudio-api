@@ -1,4 +1,4 @@
-# Environment — never commit real secrets
+# Environment â€” never commit real secrets
 .env
 .env.*
 !.env.example
@@ -20,3 +20,7 @@ build/
 # OS
 .DS_Store
 Thumbs.db
+
+.cursor/
+graphify-out/
+.cursorignore

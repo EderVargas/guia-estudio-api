@@ -6,7 +6,7 @@ router = APIRouter(prefix="/questions", tags=["questions"])
 
 VALID_SUBJECTS = {
     "matematicas", "matematicas3erTrimestre", "lenguajes","lenguajes3erTrimestre", "conocimientoMedio", "formacionCivicaEtica",
-    "ingles", "inglesExamen", "inglesExamen2doTrimestre", "lenguajes2doTrimestre",
+    "ingles", "inglesExamen", "inglesExamen2doTrimestre", "ingles2Examen1erTrimestre", "lenguajes2doTrimestre",
     "matematicas2doTrimestre", "conocimientoMedio3erTrimestre",
     "formacionCivicaEtica2doTrimestre", "formacionCivicaEtica3erTrimestre",
 }

@@ -143,7 +143,25 @@ Run once after setting up MongoDB Atlas:
 python scripts/migrate_questions.py --json-dir ../guia-estudio-front/docs/assets
 ```
 
-This deletes and reinserts all questions per subject. Safe to re-run when JSON source files are updated.
+This deletes and reinserts all questions for every subject listed in `SUBJECT_FILES`. Do not run it to add a single subject: subjects missing from that dict are left untouched, and every listed subject is wiped and replaced.
+
+To add one subject, insert into `questions` only. The key must already be in `VALID_SUBJECTS` (`app/routers/questions.py`) and in `SUBJECT_FILES`, and it must match `SUBJECTS` in the frontend. Omit `_id` and the numeric `id` from the quiz JSON. Shape:
+
+```json
+{
+  "subject": "ingles2Examen1erTrimestre",
+  "category": "Simple Present",
+  "type": "text-input",
+  "question": "She _____ in a hospital. (work)",
+  "answers": null,
+  "correctAnswer": "works",
+  "audioText": null,
+  "image": null,
+  "active": true
+}
+```
+
+`multiple-choice` uses `answers: [{ "option": "...", "correct": true }]` and `correctAnswer: null`. `text-input` uses `answers: null` and `correctAnswer`. Deploy the API after changing `VALID_SUBJECTS`; until then `GET /questions/{subject}` returns 404.
 
 ---
 

@@ -41,6 +41,7 @@ SUBJECT_FILES = {
     "ingles":                         "inglesDictationAll.json",
     "inglesExamen":                   "inglesExamen.json",
     "inglesExamen2doTrimestre":       "inglesExamen2doTrimestre.json",
+    "ingles2Examen1erTrimestre":      "ingles2Examen1erTrimestre.json",
     "lenguajes2doTrimestre":          "lenguajes2doTrimestre.json",
     "matematicas2doTrimestre":        "matematicas2doTrimestre.json",
     "conocimientoMedio2doTrimestre":  "conocimientoMedio2doTrimestre.json",
