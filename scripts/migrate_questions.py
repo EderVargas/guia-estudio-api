@@ -46,6 +46,7 @@ SUBJECT_FILES = {
     "matematicas2doTrimestre":        "matematicas2doTrimestre.json",
     "conocimientoMedio2doTrimestre":  "conocimientoMedio2doTrimestre.json",
     "formacionCivicaEtica2doTrimestre": "formacionCivicaEtica2doTrimestre.json",
+    "eticaNaturalezaSociedades2Anio1erTrimestre": "eticaNaturalezaSociedades2Anio1erTrimestre.json",
 }
 
 

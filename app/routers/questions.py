@@ -9,6 +9,7 @@ VALID_SUBJECTS = {
     "ingles", "inglesExamen", "inglesExamen2doTrimestre", "ingles2Examen1erTrimestre", "lenguajes2doTrimestre",
     "matematicas2doTrimestre", "conocimientoMedio3erTrimestre",
     "formacionCivicaEtica2doTrimestre", "formacionCivicaEtica3erTrimestre",
+    "eticaNaturalezaSociedades2Anio1erTrimestre",
 }
 
 
